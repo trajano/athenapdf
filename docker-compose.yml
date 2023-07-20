@@ -1,0 +1,11 @@
+services:
+  cli:
+    build:
+      context: .
+      target: cli
+    image: trajano/athenapdf
+  weaver:
+    build:
+      context: .
+      target: weaver-service
+    image: trajano/athenapdf-service
